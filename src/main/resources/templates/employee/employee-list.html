@@ -30,7 +30,7 @@
             </tr>
             </thead>
             <tbody>
-            <tr th:each="theEmployee : ${employeeLIst}">
+            <tr th:each="theEmployee : ${employeeList}">
                 <td th:text="${theEmployee.firstName}"></td>
                 <td th:text="${theEmployee.lastName}"></td>
                 <td th:text="${#execInfo.getNow().get(1) - theEmployee.birthday.getYear()}"></td>
